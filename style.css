@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.button {
+  margin: 1em;
+  font-weight: 500;
+  color: white;
+  font-size: 0.9rem;
+  width: 5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: coral;
+}
+.button:hover {
+  background: #333;
+}
+.modal {
+  animation-name: modalClose;
+  animation-duration: 3s;
+  animation-name: modalOpen;
+  animation-duration: 2s;
+  animation-play-state: paused;
+   display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@keyframes modalOpen{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 25% auto;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.closeBtn {
+  color: #9e9d9d;
+  float: right;
+  font-size: 20px;
+}
+.closeBtn:hover {
+  color: #000;
+  cursor: pointer;
+}
